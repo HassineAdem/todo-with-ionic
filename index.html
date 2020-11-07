@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySimpleTODOLIST</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-grid style ="padding : 0 ;">
+            <ion-toolbar color="primary">
+                <ion-title style=" padding : 20px 0 ;   text-align: center; " size="large" color="light" >TODO WITH IONIC </ion-title>
+                
+                    <ion-item>
+        
+                         <ion-input id="todoIn" type="text" placeholder="Just type your next task"></ion-input>
+                          <ion-button id ="addbtn" color ="primary" size="small">ADD</ion-button>
+                    </ion-item>
+                <div style="display: flex; justify-content: center; padding :10px 0 ; " >
+                    
+<ion-button color = "light" id="tasks">TASKS</ion-button>
+<ion-button color = "light" id ="completedTask">COMPLETED TASKS</ion-button>
+</div>
+                </ion-grid>
+            </ion-toolbar>
+        </ion-header>
+    
+    <ion-content> 
+        <ion-row>
+            <ion-col style ="text-align: center; ">
+                <p size-md ="6" offset-md ="3"><span id= "taskout"> </span> TASKS </span> </p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size-md ="6" offset-md ="3">
+                <ion-list id="expenses-list"> 
+            
+                     </ion-list>
+            </ion-col>
+</ion-row>
+</ion-row>
+<ion-row>
+    <ion-col size-md ="6" offset-md ="3">
+        <ion-list id="completedtasks-list"> 
+    
+             </ion-list>
+    </ion-col>
+</ion-row>
+
+    </ion-content>
+</ion-app>
+</body>
+<script src ="mytodo.js"></script>
+</html>
